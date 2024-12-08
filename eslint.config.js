@@ -40,6 +40,9 @@ export default tseslint.config(
 			},
 		},
 		rules: {
+			// ArkType is fancy-level with types. This doesn't apply here.
+			"@typescript-eslint/no-empty-object-type": "off",
+
 			// Stylistic concerns that don't interfere with Prettier
 			"logical-assignment-operators": [
 				"error",

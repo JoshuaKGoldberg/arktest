@@ -1,5 +1,7 @@
-export interface GreetOptions {
-	logger?: (message: string) => void;
-	message: string;
-	times?: number;
+import { Type, type } from "arktype";
+
+export interface ArkAssertion {
+	toMatchSchema(matcher: TypeOrValidate): void;
 }
+
+export type TypeOrValidate = Type | type.validate<object>;
